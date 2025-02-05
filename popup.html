@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>WhatsApp Nomes</title>
+  <style>
+    body {
+      min-width: 200px;
+      margin: 10px;
+      font-family: sans-serif;
+    }
+    label, input {
+      display: block;
+      margin-bottom: 8px;
+    }
+    #statusMsg {
+      color: green;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Configurar Nome e Ativação</h3>
+
+  <!-- Campo de nome -->
+  <label for="nomeInput">Nome (sem asteriscos):</label>
+  <input type="text" id="nomeInput" placeholder="Ex: João da Silva">
+
+  <!-- Checkbox para ativar/desativar -->
+  <label>
+    <input type="checkbox" id="enableCheckbox">
+    Ativar Script
+  </label>
+
+  <button id="salvarBtn">Salvar</button>
+
+  <p id="statusMsg"></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
